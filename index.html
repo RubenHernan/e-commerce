@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/favicon.png">
+    <title>Academlo Store</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="">
+
+    <div class="loader">
+        <img src="./src/img/favicon.png" alt="load">
+    </div>    
+    <div class="cart">
+
+        <span class="cart__close"><i class='bx bx-x'></i></span>
+        <h1 class="cart__title">My Cart</h1>
+        <div class="cart__items">
+        </div>
+
+        <div class="cart__info">
+            <div class="cart__price">
+                <span>0 items</span>
+                <h3>$0.00</h3>
+            </div>
+            <button class="cart__button" disabled><i class='bx bxs-check-shield'></i> Checkout</button>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar__menu">
+                <a href="#Home" class="navbar__logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48" class="nav__logo-icon">
+                        <title>Academlo Logo</title>
+                        <g>
+                            <g>
+                                <!-- <path d="M24.45,56.48,0,42.36V14.12L24.46,0,48.92,14.12V42.36ZM1.89,41.26l22.56,13L47,41.26v-26l-22.56-13-22.56,13Z"></path> -->
+                                <path
+                                    d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>STORE</span>
+                </a>
+                <div class="navbar__list">
+                    <ul>
+                        <li><a class="navbar__link" href="#Home">Home</a></li>
+                        <li><a class="navbar__link" href="#Products">Products</a></li>
+                    </ul>
+                    <span class="navbar__close"><i class='bx bx-x'></i></span>
+                </div>
+            </div>
+            <div class="navbar__icons">
+                <div class="navbar__darkmode">
+                    <i class='bx bx-moon'></i>
+                </div>
+                <div class="navbar__cart">
+                    <i class='bx bx-cart-alt'></i>
+                    <span class="navbar__amount">0</span>
+                </div>
+                <div class="navbar__toogle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="Home">
+
+            <div class="home__description">
+                <div class="home__text">
+                    <h1>New Sweatshirt
+                        COLLECTIONS 2022</h1>
+                    <p>Latest arrival of the new Hanes Midweight Crewneck sweatshirt imported from the 2022 series, with
+                        a modern design.</p>
+                    <span>$14.00</span>
+                </div>
+                <div class="home__buttons">
+                    <button>Discover</button>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="home__img">
+                <img src="./src/img/home.png" alt="home">
+            </div>
+        </section>
+
+        <section class="products" id="Products">
+
+            <ul class="products__menu">
+                <li class="products__filter">
+                    <a href="javascript: void(0)" data-filter="all">
+                        <h2>Show All</h2><span>show all products</span>
+                    </a>
+                </li>
+                <li class="products__filter">
+                    <a href="javascript: void(0)" data-filter=".hoodies">
+                        <h2>Hoddies</h2><span>3 products</span>
+                    </a>
+                </li>
+                <li class="products__filter">
+                    <a href="javascript: void(0)" data-filter=".shirts">
+                        <h2>Shirts</h2><span>4 products</span>
+                    </a>
+                </li>
+                <li class="products__filter">
+                    <a href="javascript: void(0)" data-filter=".sweatshirts">
+                        <h2>Sweatshirts</h2><span>4 products</span>
+                    </a>
+                </li>
+            </ul>
+            </div>
+            <div class="products__list">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__list">
+            <div class="footer__item">
+                <h1>Our information</h1>
+                <span>Toluca - México</span>
+            </div>
+            <div class="footer__item">
+                <h1>About Us</h1>
+                <ul class="footer__info">
+                    <li><a href="">Support Center</a></li>
+                    <li><a href="">Customer Support</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Copy Right</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h1>Product</h1>
+                <ul class="footer__info">
+                    <li><a href="">Hoodies</a></li>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">Sweatshirts</a></li>
+                </ul>
+            </div>
+            <div class="footer__item">
+                <h1>Social</h1>
+                <ul class="footer__social">
+                    <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                    <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                    <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <span class="footer__copy">© ACADEMLO. All rigths reserved</span>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./src/js/main.js" type="module"></script>
+
+</body>
+
+</html>
